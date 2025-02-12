@@ -5,3 +5,4 @@ let guess = prompt('Choose a number between 1 and 10:');
 if (hiddenNumber == guess) {
     console.log('Nice! You found the hidden number (4)');
 }
+else (alert('Wrong number, try again.'))
