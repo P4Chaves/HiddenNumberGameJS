@@ -1,5 +1,5 @@
 alert('Starting the hidden number game.');
-let hiddenNumber = 4;
+let hiddenNumber = parseInt(Math.random() * 10 + 1);
 console.log(hiddenNumber);
 
 let attempts = 0;
@@ -16,4 +16,5 @@ while (guess !== hiddenNumber) {
     attempts++;
 }
 
+let wordAttempt = attempts > 1 ? 'attempts' : 'attempt';
 alert(`Nice! You found the hidden number: ${hiddenNumber} in ${attempts} attempts.`);
