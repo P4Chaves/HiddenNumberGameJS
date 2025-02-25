@@ -18,4 +18,4 @@ while (guess !== hiddenNumber) {
 }
 
 let wordAttempt = attempts > 1 ? 'attempts' : 'attempt';
-alert(`Nice! You found the hidden number: ${hiddenNumber} in ${attempts} attempts.`);
+alert(`Nice! You found the hidden number: ${hiddenNumber} in ${attempts} ${wordAttempt}.`);
