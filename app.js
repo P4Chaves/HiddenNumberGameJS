@@ -1,9 +1,10 @@
 alert('Starting the hidden number game.');
-let hiddenNumber = parseInt(Math.random() * 100 + 1);
+let maxNumber = 200;
+let hiddenNumber = parseInt(Math.random() * maxNumber + 1);
 console.log(hiddenNumber);
 
 let attempts = 0;
-let guess = parseInt(prompt('Choose a number between 1 and 100:'));
+let guess = parseInt(prompt(`Choose a number between 1 and ${maxNumber}:`));
 attempts++;
 
 while (guess !== hiddenNumber) {
@@ -12,7 +13,7 @@ while (guess !== hiddenNumber) {
     } else {
         alert(`The hidden number is smaller than ${guess}`);
     }
-    guess = parseInt(prompt('Choose a number between 1 and 10:'));
+    guess = parseInt(prompt(`Choose a number between 1 and ${maxNumber}:`));
     attempts++;
 }
 
